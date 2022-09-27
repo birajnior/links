@@ -1,6 +1,22 @@
 @media (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    :root {
+        --cor1: #EFDFBB;
+        --cor2: #C8934F;
+        --cor3: #AE7349;
+        --cor4: #A05E2A;
+        --cor5: #3B271E;
+        --cor6: #3b271ec4;
+        --cor7: #a05d2ae7;
+        --fontb: 'Bebas Neue', cursive;
+        --fontr: 'Roboto', sans-serif;
+    }
 
     body {
+        max-width: 99vw;
         display: flex;
         justify-content: center;
         background-image: url(../img/pexels-joonas-kääriäinen-715859.jpg);
@@ -9,12 +25,41 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    
+
     .container {
         display: flex;
         flex-direction: column;
         width: 300px;
         height: 550px;
-        margin-top: 50px;
+        margin-top: 30px;
+    }
+
+    .link {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 300px;
+        height: 30px;
+        padding: 5px 10px;
+        justify-content: center;
+        font-family: var(--fontb);
+        font-size: 1.3em;
+        letter-spacing: 1.3px;
+        background: var(--cor7);
+        color: var(--cor5);
+        border: 0;
+        border-radius: 20px;
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .sociais {
+        margin-top: 60px;
     }
 }
